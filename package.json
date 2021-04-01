@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "apigen": "npx openapi-typescript-angular-generator -i http://localhost:58371/swagger/v1/swagger.json -o ./src/app/_api"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,10 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "openapi-typescript-angular-generator": "^8.0.0",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
